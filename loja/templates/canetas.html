@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        html, body {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+<h1>Todas as canetas cadastradas</h1>
+<ul>
+    {% for caneta in canetas %}
+        <li>{{caneta.marca}} / {{caneta.cor}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

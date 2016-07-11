@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form method="post" action="/canetas/new">
+        {% csrf_token %}
+        <input placeholder="marca" name="marca">
+        <input placeholder="cor" name="cor">
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
